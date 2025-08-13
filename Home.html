@@ -2,42 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Historic Map Home</title>
-       <script src="Home.css"></script>
+    <title>Lake Naomi: Interactive History Map
+
+</title>
+    <script src="Home.js"></script>
     <link rel="stylesheet" href="Home.css">
-        <script src="Home.js"></script>
 
 
 </head>
 <body>
-    <div class="navbar" id="navbar">
-        <a href="#">Home</a>
-        <a href="#">Map</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-            &#9776;
-        </a>
+<!-- Place this inside your navbar div, at the end of the links -->
+<div class="navbar" id="navbar">
+    <a href="#">Home</a>
+    <a href="https://www.google.com/maps/d/edit?mid=1_8WLDZXwEJUCthcVO6Ic5EdlUfYnPr4&usp=sharing" target="_blank">Map</a>
+    <a href="https://lakenaomiclub.com/" target="_blank">Lake Naomi Club</a>
+    <a href="tel:5706469191">Contact</a>
+    <div class="mode-toggle-container">
+        <button id="mode-toggle" onclick="toggleMode()">🌙 Dark Mode</button>
     </div>
-    <h1>Echoes of Ice, Waves of Time</h1>
-    <p>Welcome to the Lake Naomi Historical Map – a journey through 
-    the pivotal moments that shaped this beautiful region into the 
-    cherished destination it is today. Discover its evolution from
-     an ice harvesting business in 1895 to a premier residential and
-      resort community. Explore how the very water once used for ice
-       harvesting now welcomes sailboats and paddleboards, embodying 
-       the area's continuous adaptation and growth.
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        &#9776;
+    </a>
+</div>
+</div>
+    <h1>Lake Naomi: Interactive History Map
+
+</h1>
+    <p>Nestled in the heart of the Pocono Mountains, Lake Naomi has a rich and colorful past, 
+        shaped by summer resorts, railroads, ice harvesting, and vibrant local communities. 
+        This interactive map invites you to explore over a century of history through rare photographs, 
+        postcards, and stories tied to real places you can still visit today. Whether you’re a longtime
+         resident, curious visitor, or history enthusiast, we hope this journey into the past brings
+          the spirit of Lake Naomi to life. Start exploring and see how the land you know has changed
+           and what still remains.
    </p>
-    <!-- HTML Slide Show -->
-     
-    <h2>Interactive Map</h2>
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/d/embed?mid=1_8WLDZXwEJUCthcVO6Ic5EdlUfYnPr4&ehbc=2E312F" 
-            width="800"
-            height="600"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+   <!-- HTML Slide Show -->
+ 
+  <!-- HTML Slide Show -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="Honeymoon Lodges.png" alt="Honeymoon Lodges">
     </div>
+    <div class="mySlides fade">
+        <img src="Judges Pond.jpg" alt="Judges Pond">
+    </div>
+    <div class="mySlides fade">
+        <img src="Ice House.png" alt="Ice House">
+    </div>
+    <div class="mySlides fade">
+        <img src="Cottage.png" alt="Cottage">
+    </div>
+    <div class="mySlides fade">
+        <img src="Hungry ED.png" alt="Hungry ED">
+    </div>
+    <div class="mySlides fade">
+        <img src="Hillside House .png" alt="Hillside House">
+    </div>
+    <div class="mySlides fade">
+        <img src="Pump House.png" alt="Old Mill">
+    </div>
+    <div class="mySlides fade">
+        <img src="Pocono Lake Diner.png" alt="Lake View">
+    </div>
+    <div class="mySlides fade">
+        <img src="NAomi pines train station.png" alt="Historic Train">
+    </div>
+    <div class="mySlides fade">
+        <img src="Pocono Pines Camp for Boys .png" alt="Pocono Pines Inn">
+    </div>
+    <div class="mySlides fade">
+        <img src="Pocono Lake Highway.png" alt="Laurel Inn">
+    </div>
+    <div class="mySlides fade">
+        <img src="Ice at the Finest .png" alt="German Church">
+    </div>
+    <div class="mySlides fade">
+        <img src="post office and stone house.png" alt="Post Office">
+    </div>
+    <div class="mySlides fade">
+        <img src="Jewish Temple .png" alt="Summer Camp">
+    </div>
+    <div class="mySlides fade">
+        <img src="LNC Beach Water Slide.png" alt="Winter Scene">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+    <span class="dot" onclick="currentSlide(16)"></span>
+</div>
+
+
+    <h1>Historical Map</h1>
+    <div class="map-container">
+        <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1_8WLDZXwEJUCthcVO6Ic5EdlUfYnPr4&ehbc=2E312F" 
+        width="1000"
+        height="700"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+    </div>
+
+ <section class="quick-facts">
+  <h2>🗓️ Quick Historical Facts</h2>
+  <ul>
+    <li>
+      <span class="fact-icon">🏫</span>
+      <strong>First Schoolhouse:</strong> Built in <em>1899</em>, served 33 students; expanded in 1911.
+    </li>
+    <li>
+      <span class="fact-icon">🚂</span>
+      <strong>Railroads:</strong> Wilkes-Barre & Eastern Railroad arrived in <em>1893</em>, bringing coal and tourists.
+    </li>
+    <li>
+      <span class="fact-icon">🏨</span>
+      <strong>Resort Boom:</strong> Hotels like the Pocono Pines Inn and Laurel Inn hosted city visitors.
+    </li>
+    <li>
+      <span class="fact-icon">❄️</span>
+      <strong>Ice Harvesting:</strong> Ice houses on Lake Naomi shipped blocks year-round via train.
+    </li>
+    <li>
+      <span class="fact-icon">🔥</span>
+      <strong>Major Fires:</strong> Laurel Inn (1930), Pocono Lake Hotel (1919), and others were lost to fire.
+    </li>
+    <li>
+      <span class="fact-icon">⛪</span>
+      <strong>Oldest Church:</strong> The German Reformed Church was built in <em>1883</em> and still stands today.
+    </li>
+    <li>
+      <span class="fact-icon">📬</span>
+      <strong>Post Office:</strong> Established in <em>1894</em>; originally housed in a small resort annex.
+    </li>
+  </ul>
+</section>
+
+
+
+
+
+
+
+
